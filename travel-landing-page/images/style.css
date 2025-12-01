@@ -281,7 +281,8 @@ header img {
     }
 }
 
-  /* About Section................................................................................... */
+
+    /* About Section................................................................................... */
 
 
 
@@ -424,6 +425,7 @@ header img {
     }
 }
 
+
 /* Destination Section........................................................................... */
 
 .destinations {
@@ -524,3 +526,153 @@ header img {
         font-size: 2.6rem;
     }
 }
+
+/* Contact Section.........................................................................*/
+
+.contact {
+    padding: 80px 20px;
+    background-color: #f7f7f7;
+}
+
+
+.contact-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.contact h2 {
+    font-size: 2.4rem;
+    color: #007A87;
+}
+
+
+.contact-subtitle {
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.full-width {
+    grid-column: span 2;
+}
+
+
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;               
+    box-sizing: border-box;     
+}
+
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+
+/* Submit button */
+.contact-btn {
+    grid-column: span 2;
+    padding: 14px;
+    background-color: #19C1AC;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+
+.contact-btn:hover {
+    background-color: #007A87;
+}
+
+
+
+@media (max-width: 768px) {
+    .contact-form {
+        grid-template-columns: 1fr !important;  
+    }
+
+
+    .full-width,
+    .contact-btn {
+        grid-column: span 1 !important;
+    }
+
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/*  tablet (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .full-width,
+    .contact-btn {
+        grid-column: span 2;
+    }
+}
+
+/* Footer.............................................................................. */
+
+
+.simple-footer {
+    background: #007A87;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 768px) {
+    .simple-footer {
+        padding: 15px 8px;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .simple-footer {
+        padding: 18px 12px;
+        font-size: 1rem;
+    }
+}
+
